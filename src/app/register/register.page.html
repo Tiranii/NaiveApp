@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Register Form</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content color="dark">
+    <ion-item color="dark">
+      <ion-label position="floating">Email:</ion-label>
+      <ion-input  type="email" [(ngModel)]="user.email" required></ion-input>
+    </ion-item>
+  
+    <ion-item color="dark">
+      <ion-label position="floating">Password:</ion-label>
+      <ion-input  type="password"[(ngModel)]="user.password" required></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-checkbox color="warning" slot="start"></ion-checkbox>
+      <ion-label>I agree to the <a href="URL_of_your_terms.com" target="_blank">user agreement terms</a>.</ion-label>
+      </ion-item>
+
+
+  <ion-col size="10">
+    <ion-button  (click)="register(user)" expand="block" color="warning">
+      Register
+    </ion-button>
+  </ion-col>
+</ion-content>

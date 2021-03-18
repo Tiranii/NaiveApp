@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>SWEATER</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <h1>All Sweaters</h1>
+  <ion-col size="10">
+    <img src="/assets/sweater/pic8.jpeg" >
+    <p>Adidas Sweater 2014</p>
+    <p >RM35.00</p><br><br>
+    <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+      Buy this
+    </ion-button>
+    </ion-col>
+    <ion-col size="10">
+      <img src="/assets/sweater/pic17.jpeg" >
+      <p>Puma Black 2017 Sweater</p>
+      <p>RM65.00</p><br><br>
+      <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+        Buy this
+      </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <img src="/assets/sweater/pic39.jpeg" >
+        <p>Advisory Sweaters</p>
+        <p>RM45.00</p><br><br>
+        <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+          Buy this
+        </ion-button>
+        </ion-col>
+
+</ion-content>

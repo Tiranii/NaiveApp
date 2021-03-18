@@ -1,0 +1,108 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Products</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="dark">
+  <h2>All Categories</h2>
+  <ion-button  [routerLink]="['/sweater']" color="danger">Sweater</ion-button>
+  <ion-button  [routerLink]="['/tshirt']" color="danger">Tshirt</ion-button>
+  <ion-button  [routerLink]="['/hoodie']" color="danger">Hoodie</ion-button>
+  <ion-button  [routerLink]="['/jacket']" color="danger">Jacket</ion-button>
+  <ion-button  [routerLink]="['/jeans']" color="danger">Jeans</ion-button>
+  <ion-button  [routerLink]="['/other']" color="danger">Other</ion-button>
+
+  <h2>All Products</h2>
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="6">
+      <img src="/assets/pic28.jpeg" >
+      <p>Horizon Jacket</p>
+      <p>RM135.00</p><br><br>
+      <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+        Buy this
+      </ion-button>
+      </ion-col>
+      <ion-col size="6">
+      <img src="/assets/jacket/pic27.jpeg" >
+      <p>Black White Juon Limited Edision</p>
+      <p>RM135.00</p>
+      <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+        Buy this
+      </ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <img src="/assets/hoodie/pic2.jpeg" >
+      <p>Fila Hoodies</p>
+      <p>RM35.00</p><br><br><br>
+      <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+        Buy this
+      </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <img src="/assets/sweater/pic8.jpeg" >
+        <p>Adidas Sweater 2014</p>
+        <p >RM55.00</p><br><br>
+        <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+          Buy this
+        </ion-button>
+        </ion-col>
+        <ion-col size="6">
+        <img src="/assets/sweater/pic17.jpeg" >
+        <p>Puma Black 2017 Sweater</p>
+        <p>RM65.00</p><br><br>
+        <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+          Buy this
+        </ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <img src="/assets/tshirt/pic7.jpeg" >
+          <p>Boba Fett 2018 Tshirt</p>
+          <p>RM15.00</p><br><br>
+          <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+            Buy this
+          </ion-button>
+          </ion-col>
+          <ion-col size="6">
+      <img src="/assets/sweater/pic39.jpeg" >
+      <p>Advisory Sweaters</p>
+      <p>RM45.00</p><br><br>
+      <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+        Buy this
+      </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <img src="/assets/hoodie/pic50.jpeg" >
+        <p>Nike Blue 2018 Hoodie</p>
+        <p>RM85.00</p><br><br>
+        <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+          Buy this
+        </ion-button>
+        </ion-col>
+        <ion-col size="6">
+      <img src="/assets/hoodie/pic41.jpeg" >
+      <p>Gap Thunder</p>
+      <p>RM35.00</p><br><br>
+      <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+        Buy this
+      </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <img src="/assets/tshirt/pic44.jpeg" >
+        <p>Joe Cool Black Tshirt</p>
+        <p>RM35.00</p><br><br>
+        <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+          Buy this
+        </ion-button>
+        </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

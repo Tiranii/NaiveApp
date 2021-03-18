@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>JACKET</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <h1>All Jackets</h1>
+  <ion-col size="10">
+    <img src="/assets/pic28.jpeg" >
+    <p>Horizon Jacket</p>
+    <p>RM135.00</p><br><br>
+    <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+      Buy this
+    </ion-button>
+    </ion-col>
+    <ion-col size="10">
+    <img src="/assets/jacket/pic27.jpeg" >
+    <p>Black White Juon Limited Edision</p>
+    <p>RM135.00</p>
+    <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+      Buy this
+    </ion-button>
+  </ion-col>
+</ion-content>

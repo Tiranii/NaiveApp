@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>SignIn</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-item color="dark">
+    <ion-label position="floating">Email:</ion-label>
+    <ion-input  type="text" [(ngModel)]="user.email" required></ion-input>
+  </ion-item>
+
+  <ion-item color="dark">
+    <ion-label position="floating">Password:</ion-label>
+    <ion-input  type="password" [(ngModel)]="user.password" required></ion-input>
+  </ion-item>
+<ion-col size="10">
+  <ion-button (click)="login(user)" expand="block" color="warning">
+    Login
+  </ion-button>
+</ion-col>
+
+<p>Didn't have an account?<br></p>
+  <ion-button [routerLink]="['/register']" expand="block" color="warning">
+    Register Here
+  </ion-button>
+
+</ion-content>

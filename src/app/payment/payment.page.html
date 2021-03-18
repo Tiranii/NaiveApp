@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Payment</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [icon]="buttonIcon">
+      </ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+  <h1>Payment Checkout</h1>
+  <ion-item>
+    <ion-label position="stacked" color="danger">Name:</ion-label>
+    <ion-input placeholder="Enter your full name"></ion-input>
+  </ion-item><br>
+  <ion-item>
+    <ion-label position="stacked" color="danger">Email:</ion-label>
+    <ion-input placeholder="Enter your email address"></ion-input>
+  </ion-item><br>
+  <ion-item>
+    <ion-label position="stacked" color="danger">Tel No:</ion-label>
+    <ion-input placeholder="Enter your telephone number"></ion-input>
+  </ion-item><br>
+  <ion-item>
+  <ion-label position="stacked" color="danger">Your Address:</ion-label>
+  <ion-input placeholder="Address Line 1"></ion-input>
+  <ion-input placeholder="Address Line 2"></ion-input>
+  <ion-input placeholder="City"></ion-input>
+  <ion-input placeholder="State"></ion-input>
+  <ion-input placeholder="Zip Code"></ion-input>
+ </ion-item><br>
+ <ion-item>
+  <ion-checkbox color="dark" slot="start"></ion-checkbox>
+  <ion-label>I agree to the <a href="URL_of_your_terms.com" target="_blank">user agreement terms</a>.</ion-label>
+  </ion-item>
+
+  <ion-button [routerLink]="['/product']" expand="full" color="dark">
+    Proceed
+  </ion-button>
+  
+
+
+</ion-content>

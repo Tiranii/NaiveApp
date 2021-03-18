@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>T-SHIRT</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <h1>All Tshirts</h1>
+  <ion-col size="10">
+    <img src="/assets/tshirt/pic7.jpeg" >
+    <p>Boba Fett 2018 Tshirt</p>
+    <p>RM15.00</p><br><br>
+    <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+      Buy this
+    </ion-button>
+    </ion-col>
+    <ion-col size="10">
+      <img src="/assets/tshirt/pic44.jpeg" >
+      <p>Joe Cool Black Tshirt</p>
+      <p>RM35.00</p><br><br>
+      <ion-button [routerLink]="['/payment']" expand="full" color="warning">
+        Buy this
+      </ion-button>
+      </ion-col>
+</ion-content>
